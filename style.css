@@ -1,0 +1,91 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(blue, white);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #181818;
+    font-family: "Open Sans", "Georgia", "Times New Roman", serif;
+    font-weight: normal;
+}
+.calcGPA{
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1.remove-bottom {
+    font-weight: bolder;
+    text-align: center;
+}
+
+hr {
+    border: solid red;
+    border-width: 1px 0 0;
+    clear: both;
+    margin: 10px 0 30px;
+    height: 0;
+}
+
+hr.medium {
+    border-width: 5px 0 0;
+}
+
+a, a:visited {
+    color: #333;
+    text-decoration: none;
+    outline: 0;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="text"].small, input[type="password"].small, input[type="email"].small, textarea.small, select.small {
+    width: calc(50% - 10px);
+    margin-right: 20px;
+}
+
+.red {
+    border: 1px solid red;
+    padding: 1px;
+}
+
+.green {
+    border: 1px solid green;
+    padding: 1px;
+}
+
+.message {
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#gpa-table {
+    width: 100%;
+}
+
+#gpa-table td {
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    input[type="text"].small, input[type="password"].small, input[type="email"].small, textarea.small, select.small {
+        width: 100%;
+        margin-right: 0;
+    }
+}

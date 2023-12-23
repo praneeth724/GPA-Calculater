@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>GPA Calculator</title>
+	<meta name="author" content="Jared Musil">
+	<meta name="description" content="A simple GPA calculator">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="pure-g" id="layout">
+		<div class="pure-u-1">
+			<h1 class="remove-bottom" style="margin-top: 40px," >GPA Calculator</h1>
+			<hr class="medium">
+		</div>
+		<div class="pure-u-1">
+			<p hidden>If you have GPA before first enter your current information. Your GPA will update as you add your classes below.</p>
+			<p hidden><input type="text" class="small" id="current-gpa" value="0.00"></input> : Current GPA</p>
+			<p hidden><input type="text" class="small" id="current-hrs" value="0"></input> : Credit Hours Earned</p>
+			
+			<table id="gpa-table">
+				<thead>
+					<tr>
+						<td></td>
+						<td>Course</td>
+						<td>Credit Point Assigned</td>
+						<td>Grade</td>
+						<td>Grade Points</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><input type="text" class="coursename"></td>
+						<td><input type="text" class="credithours small"></td>
+						<td><select class="gpa_select small"></select></td>
+						<td><input type="text" class="gradepoint small" readonly="readonly"></td>
+					</tr>
+						<tr>
+						<td>2</td>
+						<td><input type="text" class="coursename"></td>
+						<td><input type="text" class="credithours small"></td>
+						<td><select class="gpa_select small"></select></td>
+						<td><input type="text" class="gradepoint small" readonly="readonly"></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><input type="text" class="coursename"></td>
+						<td><input type="text" class="credithours small"></td>
+						<td><select class="gpa_select small"></select></td>
+						<td><input type="text" class="gradepoint small" readonly="readonly"></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><input type="text" class="coursename"></td>
+						<td><input type="text" class="credithours small"></td>
+						<td><select class="gpa_select small"></select></td>
+						<td><input type="text" class="gradepoint small" readonly="readonly"></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><input type="text" class="coursename"></td>
+						<td><input type="text" class="credithours small"></td>
+						<td><select class="gpa_select small"></select></td>
+						<td><input type="text" class="gradepoint small" readonly="readonly"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" class="coursename"></td>
+						<td><input type="text" class="credithours small"></td>
+						<td><select class="gpa_select small"></select></td>
+						<td><input type="text" class="gradepoint small" readonly="readonly"></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>&nbsp;</td>
+						<td>Semester:</td>
+						<td><input type="text" id="semester-credit-hours" class="small"></td>
+						<td>&nbsp;</td>
+						<td><input type="text" id="semester-grade-points" class="small"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td hidden>Overall:</td>
+						<td hidden><input type="text" id="total-credit-hours" class="small"></td>
+						<td>&nbsp;</td>
+						<td hidden><input type="text" id="total-grade-points" class="small"></td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>GPA:</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td><input type="text" id="overall-gpa" class="small"></td>
+					</tr>
+				</tfoot>
+			</table>
+			<button id="add_row">Add Class</button>
+			<button id="remove_row">Remove Class</button>
+		</div>
+		<div class="pure-u-1">
+			<hr class="medium">
+		</div>
+	</div>
+</body>
+</html>
